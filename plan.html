@@ -1,0 +1,344 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>more plates | plan</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link href="main.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="table2csv.js"></script>
+  <script src="printThis.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+
+
+
+</head>
+<!--heading and menu-->
+<h1> more plates</h1>
+<div class="sidenav">
+  <aside class="menu">
+    <ul class="menu-list">
+      <li><a href="index.html">home</a></li>
+      <li><a href="#" class="createplan is-active">create plan</a></li>
+      <li><a class="starthidden viewplan">view plan</a></li>
+
+    </ul>
+  </aside>
+</div>
+
+
+<body>
+  <!--Main Tile-->
+  <div class="blockmargins box printable">
+    <div style="font-size: 15px" class="tabs is-fullwidth is-medium is-centered">
+      <ul id="daytabs">
+        <li><a id="day1">Day 1</a></li>
+        <li><a id="day2">Day 2</a></li>
+        <li><a id="day3">Day 3</a></li>
+        <li><a id="day4">Day 4</a></li>
+        <li><a id="day5">Day 5</a></li>
+        <li><a id="day6">Day 6</a></li>
+        <li><a id="day7">Day 7</a></li>
+      </ul>
+    </div>
+    <h1 class="has-text-centered hideonstart">Click a day tab to begin</h2>
+    <div class="flex-container">
+      <div class="RESTbox day1">
+        <button class="button is-success is-light day1">
+          <label>
+            <input class="restcheck day1" type="checkbox"><strong> Add Rest Day</strong></input>
+          </label>
+        </button>
+        <textarea class="textarea has-fixed-size day1" rows="10" placeholder="Notes for rest day"></textarea>
+      </div>
+      <div class="RESTbox day2">
+        <button class="button is-success is-light day2">
+          <label>
+            <input class="restcheck day2" type="checkbox"><strong> Add Rest Day</strong></input>
+          </label>
+        </button>
+        <textarea class="textarea has-fixed-size day2" rows="10" placeholder="Notes for rest day"></textarea>
+      </div>
+      <div class="RESTbox day3">
+        <button class="button is-success is-light day3">
+          <label>
+            <input class="restcheck day3" type="checkbox"><strong> Add Rest Day</strong></input>
+          </label>
+        </button>
+        <textarea class="textarea has-fixed-size day3" rows="10" placeholder="Notes for rest day"></textarea>
+      </div>
+      <div class="RESTbox day4">
+        <button class="button is-success is-light day4">
+          <label>
+            <input class="restcheck day4" type="checkbox"><strong> Add Rest Day</strong></input>
+          </label>
+        </button>
+        <textarea class="textarea has-fixed-size day4" rows="10" placeholder="Notes for rest day"></textarea>
+      </div>
+      <div class="RESTbox day5">
+        <button class="button is-success is-light day5">
+          <label>
+            <input class="restcheck day5" type="checkbox"><strong> Add Rest Day</strong></input>
+          </label>
+        </button>
+        <textarea class="textarea has-fixed-size day5" rows="10" placeholder="Notes for rest day"></textarea>
+      </div>
+      <div class="RESTbox day6">
+        <button class="button is-success is-light day6">
+          <label>
+            <input class="restcheck day6" type="checkbox"><strong> Add Rest Day</strong></input>
+          </label>
+        </button>
+        <textarea class="textarea has-fixed-size day6" rows="10" placeholder="Notes for rest day"></textarea>
+      </div>
+      <div class="RESTbox day7">
+        <button class="button is-success is-light day7">
+          <label>
+            <input class="restcheck day7" type="checkbox"><strong> Add Rest Day</strong></input>
+          </label>
+        </button>
+        <textarea class="textarea has-fixed-size day7" rows="10" placeholder="Notes for rest day"></textarea>
+      </div>
+      <div class="ORtext starthidden">
+        <p><strong>OR</strong></p>
+      </div>
+      <div class="panel exercisePanel starthidden">
+        <p class="panel-heading">Add Exercise</p>
+        <div class="panel-block">
+          <p class="control">
+            <input class="search input is-info" type="text" placeholder="Search">
+          </p>
+        </div>
+        <div class="tabs is-small is-toggle is-centered" style="margin-bottom: 5px; margin-top: 5px; margin-left: 3px;">
+          <ul id="exerciseTabs">
+            <li><a id="chest">Chest</a></li>
+            <li><a id="arms">Arms</a></li>
+            <li><a id="back">Back</a></li>
+            <li><a id="shoulders">Shoulders</a></li>
+            <li><a id="legs">Legs</a></li>
+            <li><a id="compounds">Compounds</a></li>
+            <li><a id="access">Accessories</a></li>
+            <li><a id="cardio">Cardio</a></li>
+            <li><a id="all">ALL</a></li>
+
+
+
+
+          </ul>
+        </div>
+        <div class="fixedheight workoutList">
+
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="panel dayPanel day1">
+      <p class="panel-heading">Day 1</p>
+      <table class="table is-fullwidth is-hoverable is-bordered">
+        <col style="width:54%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:4%">
+        <thead>
+        <tr>
+          <th><u>Exercise</u></th>
+          <th><u>Sets</u></th>
+          <th><u>Reps</u></th>
+          <th><u>Weight</u></th>
+          <th>Edit</th>
+
+
+        </tr>
+      </thead>
+    <tbody class="workoutTable day1">
+
+    </tbody>
+
+
+      </table>
+
+
+    </div>
+    <div class="panel dayPanel day2">
+      <p class="panel-heading">Day 2</p>
+      <table class="table is-fullwidth is-hoverable is-bordered">
+        <col style="width:54%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:4%">
+        <thead>
+        <tr>
+          <th><u>Exercise</u></th>
+          <th><u>Sets</u></th>
+          <th><u>Reps</u></th>
+          <th><u>Weight</u></th>
+          <th>Edit</th>
+
+
+        </tr>
+      </thead>
+    <tbody class="workoutTable day2">
+
+    </tbody>
+
+
+      </table>
+
+
+    </div>
+    <div class="panel dayPanel day3">
+      <p class="panel-heading">Day 3</p>
+      <table class="table is-fullwidth is-hoverable is-bordered">
+        <col style="width:54%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:4%">
+        <thead>
+        <tr>
+          <th><u>Exercise</u></th>
+          <th><u>Sets</u></th>
+          <th><u>Reps</u></th>
+          <th><u>Weight</u></th>
+          <th>Edit</th>
+
+
+        </tr>
+      </thead>
+    <tbody class="workoutTable day3">
+
+    </tbody>
+
+
+      </table>
+
+
+    </div>
+    <div class="panel dayPanel day4">
+      <p class="panel-heading">Day 4</p>
+      <table class="table is-fullwidth is-hoverable is-bordered">
+        <col style="width:54%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:4%">
+        <thead>
+        <tr>
+          <th><u>Exercise</u></th>
+          <th><u>Sets</u></th>
+          <th><u>Reps</u></th>
+          <th><u>Weight</u></th>
+          <th>Edit</th>
+
+
+        </tr>
+      </thead>
+    <tbody class="workoutTable day4">
+
+    </tbody>
+
+
+      </table>
+
+
+    </div>
+    <div class="panel dayPanel day5">
+      <p class="panel-heading">Day 5</p>
+      <table class="table is-fullwidth is-hoverable is-bordered">
+        <col style="width:54%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:4%">
+        <thead>
+        <tr>
+          <th><u>Exercise</u></th>
+          <th><u>Sets</u></th>
+          <th><u>Reps</u></th>
+          <th><u>Weight</u></th>
+          <th>Edit</th>
+
+
+        </tr>
+      </thead>
+    <tbody class="workoutTable day5">
+
+    </tbody>
+
+
+      </table>
+
+
+    </div>
+    <div class="panel dayPanel day6">
+      <p class="panel-heading">Day 6</p>
+      <table class="table is-fullwidth is-hoverable is-bordered">
+        <col style="width:54%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:4%">
+        <thead>
+        <tr>
+          <th><u>Exercise</u></th>
+          <th><u>Sets</u></th>
+          <th><u>Reps</u></th>
+          <th><u>Weight</u></th>
+          <th>Edit</th>
+
+
+        </tr>
+      </thead>
+    <tbody class="workoutTable day6">
+
+    </tbody>
+
+
+      </table>
+
+
+    </div>
+    <div class="panel dayPanel day7">
+      <p class="panel-heading">Day 7</p>
+      <table class="table is-fullwidth is-hoverable is-bordered">
+        <col style="width:54%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:14%">
+        <col style="width:4%">
+        <thead>
+        <tr>
+          <th><u>Exercise</u></th>
+          <th><u>Sets</u></th>
+          <th><u>Reps</u></th>
+          <th><u>Weight</u></th>
+          <th>Edit</th>
+
+
+        </tr>
+      </thead>
+    <tbody class="workoutTable day7">
+
+    </tbody>
+
+
+      </table>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+</body>
+<script type="text/javascript" src="plan.js"></script>
+
+
+</html>

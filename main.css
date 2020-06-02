@@ -1,0 +1,102 @@
+.sidenav {
+  width: 180px;
+  height: 1500px;
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+	border-radius: 4px;
+}
+
+
+
+
+h1 {
+  padding-left: 30px;
+  text-align:left;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+
+.blockmargins {
+  margin-left:200px;
+  margin-right:10px;
+}
+
+.flex-container {
+  display: flex;
+
+}
+
+.RESTbox {
+  font-size: 30px;
+  width: 30vw;
+  text-align: center;
+}
+
+.RESTbox label{
+  font-size: 20px;
+}
+
+
+
+.ORtext {
+   font-size: 25px;
+   display: flex;
+   width: 270px;
+   text-align: center;
+}
+.ORtext p {
+   margin: 0 auto;
+   margin-top: 50px;
+}
+
+.exercisePanel {
+  width: 50vw;
+}
+
+.fixedheight {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.panel-heading {
+  padding: 0.3em 1em;
+  text-align: center;
+
+}
+table, th, tr {
+  border: 2.5px solid black;
+
+}
+
+tr {
+  height: 2px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.isbordered {
+  border: 2.5px solid black;
+
+}
+
+
+.clear-input {
+
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.input {
+  border: none;
+  border-color: transparent;
+  width: 100%;
+
+}
