@@ -1,17 +1,31 @@
 
 
-var chest =  ["Incline Bench", "Bench", "Pec Fly"];
-var arms =  ["Bicep Curl", "Preacher Curl", "Tricep Extension"];
-var back =  ["Deadlift", "Barbell Row", "Pullup"];
-var shoulders =  ["Deadlift", "Barbell Row", "Pullup"];
-var cardio =  ["Running", "Ba Row", "Puup"];
+var chest =  ["Barbell Bench Press", "Incline Barbell Bench Press", "Decline Barbell Bench Press",
+"Bench Dumbbell Press",
+"Incline Dumbbell Bench Press", "Decline Dumbbell Bench Press",
+"Machine Chest Press", "Weighted Dips", "Landmine Press", "Weighted Pushup", "Barbell Close-Grip Bench Press",
+"Dumbbell Pullovers", "Smith Machine Bench Press", "Dumbbell Flyes", "Decline Dumbell Flyes", "Incline Dumbbell Flyes", "Cable Crossovers", "Cable Iron Cross", "Pushups", "Cable Chest Press"];
+var arms =  ["Dumbbell Bicep Curl", "Barbell Preacher Curl", "Cable Tricep Extension", "Skull Crusher", "Cable Bicep Curl", "Single Arm Overhead Tricep Extension", "Dumbbell Hammer Curls"];
+
+var back =  ["Conventional Deadlift", "Sumo Deadlift", "Barbell Row", "Pullup", "Lat Pulldown", "Cable Row", "Dumbbell Row", "Wide-grip Pullups", "Chinups", "Weighted Pullups", "Romanian Deadlift"];
+var shoulders =  ["Dumbbell Lateral Raise", "Upright Row", "Front Raise", "Overhead Press", "Push Press", "Military Press", "Seated Dumbbell Shoulder Press"];
+var cardio =  ["Running", "Basketball", "Swimming", "Jogging", "Hiking", "Soccer", "Rowing", "Boxing"];
+var legs =  ["Bulgarian Split Squats", "Front Squat", "Back Squat", "Hack Squat", "Leg Extension", "Leg Curls", "Leg Press", "Calf Press", "Box Squats"];
+var compounds =  ["Deadlift", "Squat", "Clean-and-Jerk", "Bench Press"];
+var access =  ["Trap Shrugs", "Calf Raise", "Wrist Curls", "Reverse Curls", "Plate Pinches"];
+var all = chest.concat(arms, back, shoulders, legs, compounds, access, cardio);
+
 
 var categories = {
   chest: chest,
   arms: arms,
   back: back,
   shoulders: shoulders,
-  cardio: cardio
+  legs: legs,
+  compounds: compounds,
+  access: access,
+  cardio: cardio,
+  all: all
 };
 
 //change day tabs on clicked
